@@ -9,7 +9,6 @@ String::String() {
 }
 
 String::~String() {
-    //printf("Deleted string \"%s\"\n", text_);
     delete[] text_;
 }
 
