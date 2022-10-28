@@ -23,17 +23,6 @@ int main() {
     printf("S1 <<= S1: \t\"%s\"\n", S1.getText());
     S1 <<= (S1 << S1);
     printf("S1 <<= (S1 << S1): \t\"%s\"\n", S1.getText());
-    // String a = "test";
-    // String b = "test2";
-    // String c = a << " " << b;
-    // printf("%s\n", c.getText());
-    // String d = a << a;
-    // printf("%s\n", d.getText());
-    // a <<= b;
-    // printf("%s\n", a.getText());
-    // a <<= " ";
-    // a = b;
-    // printf("%s\n", a.getText());
 
     printf("\n-----\n\n");
     //*/

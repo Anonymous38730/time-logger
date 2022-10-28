@@ -165,11 +165,6 @@ int Time::compare(Time t) {
     return 0;
 }
 
-// void Time::print() {
-//     //std::cout << h << ":" << m << ":" << s << "." << ms;
-//     printf("%02d:%02d:%02d.%03d", h, m, s, ms);
-// }
-
 String Time::stringify() {
     char out[] = "00:00:00.000";
     // Часы
