@@ -75,11 +75,15 @@ int main() {
         .error(String("L1.error(String S, Time t)"), Time(4))
     ;
     printf("Активация искусственной задержки (ввод цифр)\n");
-    scanf("%d", &d); L1.info("L1.info(char *s)");
-    scanf("%d", &d); L1.info(String("L1.info(String S)"));
+    scanf("%d", &d);
+    L1.info("L1.info(char *s)");
+    scanf("%d", &d);
+    L1.info(String("L1.info(String S)"));
     Time LT1 = Time::getCurrentTime();
-    scanf("%d", &d); L1.error("L1.error(char *s)");
-    scanf("%d", &d); L1.error(String("L1.error(String S)"));
+    scanf("%d", &d);
+    L1.error("L1.error(char *s)");
+    scanf("%d", &d);
+    L1.error(String("L1.error(String S)"));
     
     Log La("Log La(char *s)");
     Log Lb(String("Log Lb(String S)"));
