@@ -1,14 +1,18 @@
 #include "timec.h"
-#include <time.h>
+//#include <time.h>
+#include <sys/time.h>
 #include "stringc.h"
 
 Time Time::getCurrentTime() {
-    int curTime = time(nullptr);
+    //int curTime = time(nullptr);
+    struct timeval ct;
+    gettimeofday(&ct, nullptr);
+    long curTime = ct.tv_sec;
     return Time(
-        curTime / (60*60) % 24,
-        curTime / (60) % 60,
-        curTime % 60,
-        0
+        (int)(curTime / (60*60) % 24),
+        (int)(curTime / (60) % 60),
+        (int)(curTime % 60),
+        (int)(ct.tv_usec / 1000)
     );
 }
 
