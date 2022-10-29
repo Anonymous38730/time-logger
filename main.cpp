@@ -4,7 +4,7 @@
 #include "log.h"
 
 int main() {
-    //*/ // String
+    /*/ // String
     printf("Демонстрация String:\n");
 
     String S1;
