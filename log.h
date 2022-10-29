@@ -22,7 +22,7 @@ public:
     Log &error(String S);
     Log &error(char *s, Time t);
     Log &error(String S, Time t);
-    String stringify();
+    String toString();
     Log head(int n);
     Log head(Time time);
     Log tail(int n);

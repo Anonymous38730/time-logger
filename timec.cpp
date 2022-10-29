@@ -165,7 +165,7 @@ int Time::compare(Time t) {
     return 0;
 }
 
-String Time::stringify() {
+String Time::toString() {
     char out[] = "00:00:00.000";
     // Часы
     out[0] = h_ / 10 % 10 + '0';

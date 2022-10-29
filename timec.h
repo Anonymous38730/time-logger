@@ -26,7 +26,7 @@ public:
     void subtractMS(int ms);
     void addMS(int ms);
     int compare(Time t);
-    String stringify();
+    String toString();
     Time &operator =(Time t);
 private:
     int h_;

@@ -1,6 +1,6 @@
 #include "log.h"
 #include "timec.h"
-#include <cstdio>
+//#include <cstdio>
 
 #define LOG_INC 2
 
@@ -74,14 +74,14 @@ Log &Log::error(char *s) {
     return *this;
 }
 
-String Log::stringify() {
+String Log::toString() {
     String out;
     for (int i = 0; i < used_; i++) {
         Time tt = entries_[i].getTime();
         Entry::Type typet = entries_[i].getType();
         String St = entries_[i].getString();
         out <<=
-            tt.stringify()
+            tt.toString()
             << (char *)" [" << (
                 (typet == Entry::info) ? (char *)"i" : (
                     (typet == Entry::error) ? (char *)"!" : (char *)" "

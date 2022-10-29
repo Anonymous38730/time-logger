@@ -1,5 +1,5 @@
 #include "stringc.h"
-#include <cstdio>
+//#include <cstdio>
 
 String::String() {
     text_ = new char[1];
