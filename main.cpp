@@ -63,8 +63,8 @@ int main() {
     printf("\n-----\n\n");
     //*/
 
-    //*/ // Logger
-    printf("Демонстрация Logger:\n");
+    //*/ // Log
+    printf("Демонстрация Log:\n");
 
     int d;
     Log L1;
@@ -108,6 +108,8 @@ int main() {
     printf("Срез снизу по количеству:\n%s\n", L1.tail(3).toString().getText());
     printf("Срез сверху по времени:\n%s\n", L1.head(LT1).toString().getText());
     printf("Срез снизу по времени:\n%s\n", L1.tail(LT1).toString().getText());
+
+    //*/
     
     return 0;
 }
