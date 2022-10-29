@@ -192,3 +192,31 @@ Log Log::tail(int n) {
 Log Log::tail(Time t) {
     return tail(used_ - timeIndex(t));
 }
+
+Log::Log(String S, Time t) {
+    size_ = LOG_INC;
+    entries_ = new Entry[size_];
+    used_ = 0;
+    info(S, t);
+}
+
+Log::Log(char *s, Time t) {
+    size_ = LOG_INC;
+    entries_ = new Entry[size_];
+    used_ = 0;
+    info(s, t);
+}
+
+Log::Log(String S) {
+    size_ = LOG_INC;
+    entries_ = new Entry[size_];
+    used_ = 0;
+    info(S);
+}
+
+Log::Log(char *s) {
+    size_ = LOG_INC;
+    entries_ = new Entry[size_];
+    used_ = 0;
+    info(s);
+}

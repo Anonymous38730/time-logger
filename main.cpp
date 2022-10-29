@@ -81,6 +81,16 @@ int main() {
     scanf("%d", &d); L1.error("L1.error(char *s)");
     scanf("%d", &d); L1.error(String("L1.error(String S)"));
     
+    Log La("Log La(char *s)");
+    Log Lb(String("Log Lb(String S)"));
+    Log Lc("Log Lc(char *s, Time t)", Time(999,999,999,999));
+    Log Ld(String("Log Ld(String S, Time t)"), Time(999,999,999,999));
+    printf("Конструкторы с параметрами:\n%s%s%s%s\n",
+        La.toString().getText(),
+        Lb.toString().getText(),
+        Lc.toString().getText(),
+        Ld.toString().getText()
+    );
     printf("L1:\n%s\n", L1.toString().getText());
     Log L2 = L1;
     printf("L2: копия L1:\n%s\n", L2.toString().getText());

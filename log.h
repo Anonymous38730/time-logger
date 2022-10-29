@@ -8,10 +8,10 @@ public:
     Log();
     ~Log();
     Log(Log &L);
-    //Log(char *s);
-    //Log(String S);
-    //Log(char *s, Time t);
-    //Log(String S, Time t);
+    Log(char *s);
+    Log(String S);
+    Log(char *s, Time t);
+    Log(String S, Time t);
     int getLength() const;
     Log &clear();
     Log &info(char *s);
