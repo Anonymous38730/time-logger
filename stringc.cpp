@@ -19,7 +19,7 @@ int String::length(char *s) {
     return len;
 }
 
-int String::length(String &S) {
+int String::length(String S) {
     return S.length();
 }
 

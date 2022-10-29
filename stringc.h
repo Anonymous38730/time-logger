@@ -13,7 +13,7 @@ public:
     String operator <<(char *s);
     int length() const;
     static int length(char *s);
-    static int length(String &S);
+    static int length(String S);
     char *getText() const;
     String &operator =(String S);
 private:

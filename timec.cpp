@@ -113,7 +113,7 @@ void Time::set(int h, int m, int s, int ms) {
     clamp();
 }
 
-Time &Time::operator +=(Time &t) {
+Time &Time::operator +=(Time t) {
     h_ += t.h_;
     m_ += t.m_;
     s_ += t.s_;
@@ -122,7 +122,7 @@ Time &Time::operator +=(Time &t) {
     return *this;
 }
 
-Time &Time::operator -=(Time &t) {
+Time &Time::operator -=(Time t) {
     h_ -= t.h_;
     m_ -= t.m_;
     s_ -= t.s_;
@@ -131,13 +131,13 @@ Time &Time::operator -=(Time &t) {
     return *this;
 }
 
-Time Time::operator +(Time &t) {
+Time Time::operator +(Time t) {
     Time out(*this);
     out += t;
     return out;
 }
 
-Time Time::operator -(Time &t) {
+Time Time::operator -(Time t) {
     Time out(*this);
     out -= t;
     return out;

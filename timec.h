@@ -19,10 +19,10 @@ public:
     // void setH();
     void set(int h = 0, int m = 0, int s = 0, int ms = 0);
     static Time getCurrentTime();
-    Time &operator -=(Time &t);
-    Time &operator +=(Time &t);
-    Time operator -(Time &t);
-    Time operator +(Time &t);
+    Time &operator -=(Time t);
+    Time &operator +=(Time t);
+    Time operator -(Time t);
+    Time operator +(Time t);
     void subtractMS(int ms);
     void addMS(int ms);
     int compare(Time t);

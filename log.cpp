@@ -159,7 +159,7 @@ int Log::timeIndex(Time t) {
     return i + 1;
 }
 
-Log &Log::operator =(Log &L) {
+Log &Log::operator =(Log L) {
     clear();
     for (int i = 0; i < L.used_; i++) {
         insert(L.entries_[i], i);

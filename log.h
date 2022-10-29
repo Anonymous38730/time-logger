@@ -27,7 +27,7 @@ public:
     Log head(Time time);
     Log tail(int n);
     Log tail(Time time);
-    Log &operator =(Log &L);
+    Log &operator =(Log L);
 private:
     class Entry {
         //friend Log::~Log();
